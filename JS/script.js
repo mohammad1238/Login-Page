@@ -1,7 +1,12 @@
 const forms = document.querySelector('.forms');
       pwShowHide = document.querySelectorAll('.eye-icon');
       links = document.querySelectorAll('.link');
+      
+let email = document.getElementById('email');
 
+window.onload = function () {
+    email.focus();
+}
 pwShowHide.forEach(eyeIcon => {
     eyeIcon.addEventListener("click", () => {
         let pwFields = eyeIcon.parentElement.querySelectorAll(".password");
